@@ -27,16 +27,23 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fw-bold" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fw-bold" href="#about">About</a>
               </li>
+                <li class="nav-item">
+                <a class="nav-link fw-bold" href="#coupon">Coupon</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Menu</a>
+              </li>
               <li class="nav-item ">
                 <a class="nav-link fw-bold" href="#contact">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Menu</a>
+
+                <li class="nav-item ">
+                <a class="nav-link fw-bold" href="#FAQ">FAQ</a>
               </li>
               <li>
                 <button class="btn btn-outline-warning mx-md-5 px-2 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal2">Log In</button>
@@ -49,7 +56,7 @@
 
     <!-- Navbar end -->
     <!-- slider start  -->
-    <section class="container mb-5">
+    <section class="container mb-5" id="home">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -63,7 +70,7 @@
               <div class="carousel-item">
                 <img class="img-fluid" src="{% static 'images/food2.jpg' %}" class="d-block w-100" alt="..." style="object-fit: cover; height:100%;">
                 <div class="carousel-caption ">
-                    <h1 class="text-center fw-bold">Brain Requires healthy food</h1>
+                    <h1 class="text-center fw-bold">Brain Requires Healthy Food</h1>
                     <p class="text-center px-5 d-sm-none d-md-block">A balanced diet can help students increase energy levels, promote a functioning immune system, improve their ability to cope with stress, and increase concentration and performance in school.</p>
                       <button class="btn px-4 text-light" style="background-color: #c29510eb;">Get Coupon</button>
                   </div>
@@ -72,7 +79,7 @@
               <div class="carousel-item">
                 <img class="img-fluid" src="{% static 'images/food2.jpg' %}" class="d-block w-100" alt="..." style="object-fit: cover; height:100%;">
                 <div class="carousel-caption ">
-                    <h1 class="text-center fw-bold">First We Eat,Then We <br> Do Everything Else</h1>
+                    <h1 class="text-center fw-bold">Food is Culture, Habit, Craving <br> And Identity</h1>
                     <p class="text-center px-5 d-sm-none d-md-block">A balanced diet can help students increase energy levels, promote a functioning immune system, improve their ability to cope with stress, and increase concentration and performance in school.</p>
                       <button class="btn px-4 text-light" style="background-color: #c29510eb;">Get Coupon</button>
                   </div>
@@ -131,21 +138,37 @@
                               <img src="{% static 'images/breakfast.jpg' %}" class="card-img-top img-fluid menu-img p-3" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title">Breakfast</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, doloribus.</p>
+                                <p class="card-text">
+                                  <ul>
+                                    <li>Porota/Ruti</li>
+                                    <li>Omlete</li>
+                                    <li>Daal/<br>Vegetables</li>
+                                  </ul>
+                                </p>
                               </div>
                             </div>
                             <div class="card border border-2 rounded shadow-lg">
                               <img src="{% static 'images/lunch.jpg' %}" class="card-img-top  img-fluid menu-img p-3" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title">Lunch</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, repellat.</p>
+                                <ul>
+                                    <li>Plain Rice</li>
+                                    <li>Chicken</li>
+                                    <li>Daal</li>
+                                    <li>Vegetables</li>
+                                  </ul>
                               </div>
                             </div>
                             <div class="card border border-2 rounded shadow-lg">
                               <img src="{% static 'images/dinner.jpg' %}" class="card-img-top img-fluid menu-img p-3" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title">Dinner</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, odio.</p>
+                               <ul>
+                                    <li>Plain Rice</li>
+                                    <li>Fish</li>
+                                    <li>Daal</li>
+                                    <li>Vegetables</li>
+                                  </ul>
                               </div>
                             </div>
                           </div>
@@ -161,12 +184,12 @@
 <!--Main-->
 <main>
     <!-- About Section  -->
-        <section class="container welcome pb-5 mb-5" id="about">
+        <section class="container welcome pb-5" id="about">
             <div class="text-center mx-5 px-3 text-white">
               <p class="pt-5">Healthy Food</p>
               <h1 class="fw-bold pb-3 fs-1">About Our Food Quality</h1>
               <div class="line2 line mb-1"></div>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, fugiat porro. Hic perspiciatis doloribus possimus provident dignissimos perferendis placeat nulla!</p>
+              <p>We always try to provide Freash and organic foods to our students.It's our atmost responsibility to provide our students healthy foods.We do not compromise with tastes. Always try to provide tasty foods!</p>
               </div>
                   <div class="row">
                     <div class="col-sm-12 col-md-4 mt-3">
@@ -174,7 +197,7 @@
                         <i class="fa-solid fa-house fa-3x icon"></i>
                         <div class="card-body text-center">
                           <h5 class="card-title">Always Fresh</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni exercitationem non eum, vel placeat omnis?</p>
+                          <p class="card-text">We always try to provide Freash and organic foods to our students.</p>
                         </div>
                        </div>
                     </div>
@@ -184,7 +207,7 @@
                         <i class="fa-solid fa-fan fa-3x icon"></i>
                       <div class="card-body text-center">
                         <h5 class="card-title">Always Healthy</h5>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis accusamus totam iure ducimus quia deserunt!</p>
+                        <p class="card-text">It's our atmost responsibility to provide our students healthy foods.</p>
                       </div>
                     </div>
                   </div>
@@ -193,16 +216,18 @@
                     <div class="card mx-3 border-0">
                       <i class="fa-solid fa-gift fa-3x icon"></i>
                   <div class="card-body text-center">
-                    <h5 class="card-title">Alwaya Tasty</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, illo. Totam repellat eos enim rerum!</p>
+                    <h5 class="card-title">Always Tasty</h5>
+                    <p class="card-text">We do not compromise with tastes. Always try to provide tasty foods!</p>
                   </div>
                   </div>
                 </div>
+
                   </div>
            </section>
            <!-- About Section End -->
+
      <!-- Coupon Section start -->
-           <section class="container facilities text-center mb-2">
+           <section class="container facilities text-center mb-2" id="coupon">
             <h2 class="fw-bold fs-1">Coupon</h2>
             <p>We provide different kind of packages for coupons. You can buy upto your choice!</p>
             <div class="row">
@@ -271,7 +296,7 @@
                         </div>
                         <div>
                           <p class=" p-3">
-                            You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                            The food is very healthy. It feels great to have food in a hygenic place.
                           </p>
                         </div>
                         <div>
@@ -298,12 +323,12 @@
                            </div>
                          </div>
                          <div>
-                           <p class=" p-3">
-                             You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
-                           </p>
-                         </div>
+                          <p class=" p-3">
+                            The food is very healthy. It feels great to have food in a hygenic place.
+                          </p>
+                        </div>
                          <div>
-                           <img class="img-fluid" src="images/student-6.png" style="height: 40px;" alt="">
+                           <img class="img-fluid" src="{% static 'images/student-6.png' %}" style="height: 40px;" alt="">
                            <div>
                              <h5>Shanta Akter</h5>
                              <p>CSE,JU</p>
@@ -333,14 +358,14 @@
                         </div>
                         <div>
                           <p class=" p-3">
-                            You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                            The food is very healthy. It feels great to have food in a hygenic place.
                           </p>
                         </div>
                         <div>
-                          <img class="img-fluid" src="images/student-5.png" style="height: 40px;" alt="">
+                          <img class="img-fluid" src="{% static 'images/student-5.png' %}" style="height: 40px;" alt="">
                           <div>
                             <h5>Awlad Hossain</h5>
-                            <p>UI Designer</p>
+                            <p>CSE,JU</p>
                           </div>
                         </div>
                        </div>
@@ -360,15 +385,15 @@
                            </div>
                          </div>
                          <div>
-                           <p class=" p-3">
-                             You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
-                           </p>
-                         </div>
+                          <p class=" p-3">
+                            The food is very healthy. It feels great to have food in a hygenic place.
+                          </p>
+                        </div>
                          <div>
-                           <img class="img-fluid" src="image/student-6.png" style="height: 40px;" alt="">
+                           <img class="img-fluid" src="{% static 'images/student-6.png' %}" style="height: 40px;" alt="">
                            <div>
                              <h5>Shanta Akter</h5>
-                             <p>Graphic Designe</p>
+                             <p>CSE,JU</p>
                            </div>
                          </div>
                         </div>
@@ -383,7 +408,7 @@
                        <div class="p-3 border border-2 border-light rounded-2 bg-white">
                         <div class="d-flex justify-content-between mt-3">
                           <div>
-                            <img class="img-fluid rounded" style="height:40px ;"src="{% static 'images/comma.png' %}" alt="">
+                            <img class="img-fluid rounded" style="height:40px ;" src="{% static 'images/comma.png' %}" alt="">
                           </div>
                           <div style="color:gold">
                             <i class="fa-solid fa-star"></i>
@@ -395,14 +420,14 @@
                         </div>
                         <div>
                           <p class=" p-3">
-                            You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
+                            The food is very healthy. It feels great to have food in a hygenic place.
                           </p>
                         </div>
                         <div>
-                          <img class="img-fluid" src="images/student-5.png" style="height: 40px;" alt="">
+                          <img class="img-fluid" src="{% static 'images/student-5.png' %}" style="height: 40px;" alt="">
                           <div>
                             <h5>Awlad Hossain</h5>
-                            <p>UI Designer</p>
+                            <p>CSE,JU</p>
                           </div>
                         </div>
                        </div>
@@ -422,21 +447,22 @@
                            </div>
                          </div>
                          <div>
-                           <p class=" p-3">
-                             You will definitely get a boost in your studies if you start studying through this app. They have amazing features that are effective as well as engaging.Simply outstanding, this site is really good. This was recommended to me by my friends and I genuinely feel this is really helpful
-                           </p>
-                         </div>
+                          <p class=" p-3">
+                            The food is very healthy. It feels great to have food in a hygenic place.
+                          </p>
+                        </div>
                          <div>
-                           <img class="img-fluid" src="images/student-6.png" style="height: 40px;" alt="">
+                           <img class="img-fluid" src="{% static 'images/student-6.png' %}" style="height: 40px;" alt="">
                            <div>
                              <h5>Shanta Akter</h5>
-                             <p>Graphic Designe</p>
+                             <p>CSE,JU</p>
                            </div>
                          </div>
                         </div>
                        </div>
                     </div>
                   </div>
+                </div>
                 </div>
               <button class="carousel-control-prev c-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -453,12 +479,32 @@
 
         <section class="cta container" id="contact" style="background-image: linear-gradient(rgba(4,9,30,.7),rgba(4,9,30,.7)),url({% static 'images/contact.jpg' %});">
         <h1>What Can We Do For You? For Any Query</h1>
-        <button class="btn px-4 text-light" style="background-color: #c29510eb;">Contact Us</button>
+        <button class="btn px-4 text-light" style="background-color: #c29510eb;" data-bs-toggle="modal" data-bs-target="#exampleModal3">Contact Us</button>
      </section>
 
-
+    <!-- Contact Modal Start-->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel3">Send us message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group mx-sm-3">
+                  <textarea class="border border-1 rounded" name="" id="" cols="55" rows="5" placeholder="Leave a message..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary fw-bold" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning text-light fw-bold">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Modal End-->
      <!-- FAQ Start  -->
-     <section class="container my-5 py-5">
+     <section class="container my-5 py-5" id="FAQ">
         <div class="mx-lg-5 px-lg-5">
           <div class="text-center mb-5">
             <h1 class="fw-bold mb-3">Frequently Asked Questions</h1>
